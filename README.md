@@ -161,6 +161,11 @@ Submit a Pull Request. Classes should have the following sections, in order:
 * Monads
   * God help you
 * Those funky operators like `<*>` and what they mean
+* Building an interpreter
+  * [Crafting Interpreters](http://www.craftinginterpreters.com/)
+  * [Writing an Interpreter in Go](https://interpreterbook.com/)
+  * [Scheme from Scratch (C)](http://peter.michaux.ca/articles/scheme-from-scratch-introduction)
+  * [Building LISP (C)](http://www.lwh.jp/lisp/)
 
 ### Tufts resources
 
