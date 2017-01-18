@@ -6,6 +6,7 @@ interested in learning more about the classes they are currently taking.
 # What classes are there?
 
 * [COMP 105](#comp-105)
+* [COMP 40](#comp-40)
 
 # How can I add my two cents?
 
@@ -174,3 +175,70 @@ Submit a Pull Request. Classes should have the following sections, in order:
 * The grad TAs
 * Norman Ramsey
 * Kathleen Fisher
+
+## COMP 40
+
+### Topics covered
+
+* Introduction to C (for those coming from a C++ background)
+* The benefits and drawbacks of the pair programming approach
+* Using abstraction/modularity to write maintainable code
+* Enforcing and reasoning about invariants to ensure program correctness
+* Von Neumann architecture (especially: the significance of data and code living in the same memory)
+* Reading and writing technical documentation
+* Bits, bytes, and nibbles ("bits is bits", i.e.: data is subject to your interpretation)
+* More of an in-depth view into what happens during compilation
+* Caching and performance measuring
+* Low-level arithmetic and representation of numbers
+* Bitwise operations
+* Reading and writing assembly code
+
+### Tips
+
+* Start the homework early, start the homework early, start the homework early- Comp 40 is not a *conceptually* difficult class- its main challenge is in the amount of time that you will have to spend coding.  If you start early, you will give yourself the time you need to 1. write the bugs that are inevitable and 2. fix the bugs and *learn* why they happened, rather than spend the whole semester in a debugging panic that teaches you nothing.
+* Be an effective pair programmer.  The partners that you find yourself with during the semester will, mostly, be people you have never met.  The odds are that either they understand the course material significantly better than you, or that you understand the course material significantly better than they do; very rarely will you and your partner be a perfect match in terms of your understanding.  If this happens and they are the ones who understand more, take the time to ask them questions about what is going on in the code that you two are writing; it is *not* a waste of time, and it will help *both* of you to better understand the material.  If you are the one who understands more, be sure to stop periodically and check in with your partner.  Being able to explain the code and the course topics will reinforce your understanding, and might even be fun.
+* Become acquainted with sites that contain documentation and Q&A resources, such as Stack Overflow and [Tutorials Point](https://www.tutorialspoint.com/cprogramming/).  I'm not sure how well-regarded the latter is, but I have found a number of times that they have very clear examples and explanations of some of the standard library tools you will use.  For example, [this](https://www.tutorialspoint.com/c_standard_library/c_function_sscanf.htm) may be a good place to read about one of the standard library functions you will use in the first lab.
+* Be an effective HalliganHelper queue resident.  You will spend a lot of time on the HalliganHelper queue.  Before speaking with a TA, there are a number of steps you should follow:
+  * First, you should run your code through a debugger (gdb) and/or valgrind. If you don't know how to use one or both of these tools, it is *absolutely* worth your time to meet with a TA at the beginning of the semester to get an introduction to these tools.  Humans are bad at reasoning about code, so you need to have some idea of what is actually going on in your code.
+  * you should search google/stack overflow to the best of your ability
+  * you should draw pictures, which will help to clarify both pointer questions and questions about your design (in terms of interactiosn between modules)
+  * you should come up with an educated guess for what you believe the answer is, or might be, and why that is the case
+  * you should explain to the TA what you have tried already. "My code is broken" and "Why is this segfault happening?" are common statements that a TA hears when they first walk up to a group, but are not helpful places to begin.
+* You will be forced to read technical documentation and header (`.h`) files that will be provided to you.  If you run into code or jargon that you don't understand (especially `typedef` related constructs), you should follow the steps above and then talk to a TA if still confused.  Plowing through the confusion is rarely the right thing to do, and will cost you, in some cases, a significant amount of time.
+* As long as you try your best during the class, the points will work themselves out in the end. That's why we give vague grades like "Very good", "good", etc.  Don't worry too much about your grades, don't stay in Halligan into the early morning hours, and please stay healthy :)
+
+### Combining Material
+
+* Write test programs.  If you are curious "what would happen if..." or "why is my code doing xyz...", you should change the code, recompile it, and see what changes.
+* Learn effective Googling strategies.  For example, googling `site:stackoverflow.com sscanf` will limit your search results to Stack Overflow.
+* Look for interesting questions on Stack Overflow's "Related" and "Hot Network Questions" sidebars.  I have learned a lot of interesting pieces of C trivia by following those links.
+* Write your own assembler for UMASM (the assembly language you write in during the last assignment)
+* I once had somebody ask me an amazing question when I TA'd for COMP 15:
+  * "We learned in lecture that we use a 'class' to store and model state and behavior.  I understand how we store state, because that's just data that we can store in memory.  But how does a class store behavior?"
+  * Spend some time thinking about the answer to this question.  The answer reveals a lot of deeper, subtle points about the relationship between code and data.
+* Explore other low-level, systems level languages such as Rust.  A good exercise is to implement the Universal Machine in Rust.
+* Since the C standard library is so small, implement various data structures or other tools that would be useful to have in a language:
+  * Implement various collections (hash tables, sets, etc.)
+  * Implement [arbitrary-precision arithmetic](https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic)
+  * Implement a library for precise real number arithmetic (i.e. make it so that 0.1 + 0.2 == 0.3)
+* Explore compilation (look for links in the [COMP 105](#comp-105) section.
+
+### Other related material
+Comp 40 gives you the tools to explore a large number of other topics:
+
+* [Hardware emulation](https://en.wikipedia.org/wiki/Hardware_emulation)
+* Learn about [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) and how it works at a low-level
+* Go more in-depth with low-level code
+  * Read the coolest [stack overflow question](http://stackoverflow.com/questions/11227809/why-is-it-faster-to-process-a-sorted-array-than-an-unsorted-array) ever
+  * Low-level security
+    * [Buffer overflow attacks](http://heartbleed.com/) (and also read this cool buffer overflow [story](http://www.gamasutra.com/view/feature/194772/))
+    * [Return oriented programming](https://en.wikipedia.org/wiki/Return-oriented_programming)
+    * [This](https://trailofbits.github.io/ctf/exploits/references/tr-2007-153.pdf) looks to potentially be a good resource for other low-level security exploits.
+  * Learn about how potentially life-threatening [bugs](https://around.com/ariane.html) manifest themselves in low-level code
+* Go on to explore higher-level languages, like Python, Java, functional languages, etc., using your low-level knowlede to reason about the performance of constructs in these languages.
+* Find and contribute to open-source projects! This course gives you the ability to read large amounts of code, familiarize yourself with an existing codebase, and write real code.  Put it to use by giving back to the larger CS community!
+
+### Tufts resources
+* There are a lot of very smart undergrad TAs. Talk to them and learn from them.
+* Mark Sheldon gets very excited about some of the topics in Comp 40. Stop by his office to chat with him!
+* Norman Ramsey designed the class
