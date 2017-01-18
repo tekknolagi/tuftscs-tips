@@ -3,6 +3,10 @@
 This repository is a resource for Tufts Computer Science students who are
 interested in learning more about the classes they are currently taking.
 
+# What classes are there?
+
+* [COMP 105](#comp-105)
+
 # How can I add my two cents?
 
 Submit a Pull Request. Classes should have the following sections, in order:
@@ -19,10 +23,6 @@ Submit a Pull Request. Classes should have the following sections, in order:
     the course, if desired)
 5. Tufts resources
   * Who or what at Tufts can be a guiding force or helping hand?
-
-# What classes are there?
-
-* [COMP 105](#comp-105)
 
 # Classes
 
