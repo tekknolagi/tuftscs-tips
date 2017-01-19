@@ -7,6 +7,7 @@ interested in learning more about the classes they are currently taking.
 
 * [COMP 105](#comp-105)
 * [COMP 40](#comp-40)
+* [COMP 15](#comp-15)
 
 # How can I add my two cents?
 
@@ -315,3 +316,63 @@ Comp 40 gives you the tools to explore a large number of other topics:
 * Mark Sheldon gets very excited about some of the topics in Comp 40. Stop by his office to chat with him!
 * Norman Ramsey designed the class
 * Noah Mendelsohn is the [chairman of the internet](http://www.arcanedomain.com/computerwork.html) and is in general incredibly smart; he teaches COMP 40 on alternating semesters with Prof. Sheldon. Talk to him too!
+
+## COMP 15
+
+### Topics Covered:
+* Your first guide to getting a software engineering job (interview questions!)
+* Knowing the difference between the client side and the implementation side 
+* Introduction to C++ programs that utilize complex data structures
+* Utilizing Object Oriented Programming (OOP) concepts to write better code
+* Using abstraction/modularity to break down complex problems
+* Allocating and managing dynamic memory and visualizing what happens under the hood (aliasing, deep vs shallow copies)
+* Evaluating different data structures (sequences vs linked list, stacks vs queues) 
+* Manipulating data structures to make it better (trees, heaps and more!)
+* Writing code that must handle MANY test cases and handling exceptions
+* Understanding Big O (asymptotic analysis) and why certain choices are better (first step towards becoming an ‘engineer’)
+* Reading long documentations (~8 pages PDF) for homework assignments
+* Writing technical comments and documents (README) that make your code easier to follow
+* RECURSION, recursion, ………, Mark loves RECURSION, hence, so should you
+* Debugging is life and you will become master seg fault solver by learning how to use valgrind
+* Visualizing sorting (literally, you will become a number to be sorted in class)
+* Learning to optimize your code and seeing how your choices of code MATTER!
+
+### Tips:
+* Start the homework early and read the homework document early. Comp 15 is a new challenge for comp 11 students and the leap might feel like a lot (this is coming from a comp 11 TA). At times, the document may seem confusing and there may seem like there’s too many things to consider at once. I know that there were students who started homework a few days before and got them done in comp 11. In comp 15, that is NO LONGER an option. You will get STUCK in automatic testing even if your code works with simple input testing. Moreover, if you are confused, so are other students in your class and 2~3 TAs can’t get to over 20 students at once. Really try to start early so that you can discuss your idea with the TA in peace. You will realize that you think a lot clearer when there is no pressure, so really try to start early.
+* Before coding, try to draw out what you would like to do. After drawing out your idea, go talk to a TA to see if your code makes logical sense. Even complex ideas like recursion will all make sense once you begin drawing them out. Spend Friday understanding the documentation from the homework assignment, spend Saturday drawing out your idea, spend Sunday talking with your TA about the sketch that you have and then code! The TAs prefer to talk about your sketch and idea than debug with you because debugging code is not only tiring, it takes a lot longer for you to finish your homework or project. Save the misery on both parts by trying out this strategy! If you have a good design, then you will avoid the mess of getting into bugs that are difficult to find. Moreover, if you have a good design, then the TA will likely not have to look at your code and fix your bug by noticing an error in your design. Trust me on this, you will save a SIGNIFICANT amount of time! 
+* Become acquainted with data structures. Learn how they work and draw them out with the TAs. Seek the TAs to learn how the complex data structures work instead of seeking them solely for debugging! The TAs for comp15 are an awesome group and all have a very deep understanding of how the data structures work. You will see that even one wrong detail in data structures will lead to segmentation fault quicksand or unexpected behavior. Each code you write really matter, so even if you understand, go check with the TAs to make sure you are crystal clear!
+* Decisions, decisions, decisions! There are multiple right answers in data structures, which is why, “am I doing it right?” will give you a very mixed answer in this class. Taking ownership of your decision after evaluating different options is a hallmark of a good engineer, so make sure you have a deep understanding of each data structure you cover in class. There is nothing minor that you can skip in this class, as each new data structure is now a new option you can consider for your upcoming homework or project. Each data structure has its own pros and cons, so learn how to evaluate and choose what you believe is the best for the problem you are trying to solve! 
+* Make sure you go to class. Mark does not use a powerpoint, so if you miss one, then you will not have any resources to catch up with class work. So if something happens, make sure you get note from someone and try to never fall behind because the class goes by quick!
+* There is no more HalliganHelper, but Piazza is always on to communicate with the TAs. Identify the location of the TAs through Piazza to get help! Also, Mark holds regular office hours and he is of great help if you want a deep understanding of the concepts discussed in class. From my personal experience, he normally takes around 20~30 minutes to explain concepts each time I visited, so if you are in line, you may have to wait quite a time. But once it is your turn, you will get the thorough help that you may need. Mark is awesome during office hours, so do try to take advantage of it!
+* Comp 15 debugging tutorial 101:
+  * First, you should run your code through a debugger (gdb) and/or valgrind. If you don't know how to use one or both of these tools, it is absolutely worth your time to meet with a TA at the beginning of the semester to get an introduction to these tools. Memory management is new to all comp 11 students and it is essential you learn how to use these tools. You won’t survive without it, so learn it ASAP!
+  * Humans are bad at reasoning about code, so you need to have some idea of what is actually going on in your code. Hence, when you see errors, you should draw pictures and bring them to the TAs to clarify both what you intended and what is actually going on in your code. This will help you make a better educated guess and give the TAs a lot more pleasant experience.
+  * You should explain to the TA what you have tried already. "My code is broken" and "Why is this segfault happening?" are common statements that a TA hears when they first walk up to a group, but are not helpful places to begin.
+* Exams and projects are difficult, but Mark is very understanding. Don’t freak out and know it’s okay to have a low score on the exam because Mark will curve well. He understands that he is throwing a lot at you and will reward you for all your hard work. You may very well be surprised with your final score. For projects in particular, he will likely extend the deadline if the difficulty is too high, so keep working hard and please stay healthy :)
+
+### Combining Material
+* Write test programs. We call this unit testing where you make test files for each function that you make. The goal of testing is to try to break your file and be as nasty as you can to it, as you want to prove that your code is very robust against potential hackers! Sometimes, you will be asked to submit your testing file because it is that important! After making the test file, input various arguments into your function that you are testing, even those that are not supposed to work. Make sure that your exceptions work the way you intended. If you are curious "what would happen if..." or "why is my code doing xyz...", you should change the code, recompile it, and see what changes. The most common errors to check are off by 1 errors, exceeding capacity and empty container errors.
+* Utilize the object oriented programming concept and learn how to use pointers! Your code will become a lot better once you utilize these concepts and writing functions that are within 30 lines will become a lot easier! If the big ideas that Mark talks about during class is not clear, go to the office hours and get those covered ASAP! The way your code is graded will no longer be solely based on whether your code works. Your design matters too, so really take the initiative to understand the big topics thoroughly!
+* If the ideas regarding data structures did not make any sense and you would like more resources, check out mycodeschool on youtube or geeksforgeeks. These are few of the many data structure resources out there that you may use to visualize the concepts. Don’t try to copy off the code as that will ruin your learning experience, but know that there’s a lot out there since data structures is ESSENTIAL for job interviews at top tech jobs. What’s truly important is that you understand how the code works under the hood so that you can show what you know during your future interviews :)
+* An excellent question asked by a student in COMP 15 one semester:
+  * "We learned in lecture that we use a 'class' to store and model state and
+    behavior.  I understand how we store state, because that's just data that
+    we can store in memory.  But how does a class store behavior?"
+  * Spend some time thinking about the answer to this question.  The answer
+    reveals a lot of deeper, subtle points about the relationship between code
+    and data.
+* Explore different concepts and know why certain errors occur by drawing. Once you draw it out, you will realize that the computers never lie.
+*  There are standard template libraries in your book and on-line. Don’t fall into the temptation of using them (unless explicitly told); the purpose of this class is to understand how they work under the hood. If you resort to using other resources, use them for visualization only and for any other help, go to the TAs.
+
+### Other related material
+Comp 15 gives you the opportunity to explore what happens under the hood and solve complex problems!
+* Learn about valgrind and memory management
+* Get the skills to solve complex problems! HackerRank and other interview problems will be solvable after taking this class.
+* Learn about how to write code that will be easy to read for others and prevent nasty people who wants to prove your code as ‘breakable’ wrong
+* Find out how pointers can break your code and optimize your code. Instead of being clueless, now you will be able to look at code and see why they break! Not only could you break other’s code (but please don’t), you can make someone else’s day by making it work!
+
+### Tufts resources
+* There are a lot of very smart undergrad TAs. Talk to them and learn from them.
+* Utilize the piazza and ask questions during the labs. Labs are one time where you can ask any question that you discussed in class to people who are super approachable :)
+* Mark Sheldon gets very excited about some of the topics in Comp 15. Stop by his office to chat with him!
+
