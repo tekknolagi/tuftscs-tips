@@ -320,22 +320,22 @@ Comp 40 gives you the tools to explore a large number of other topics:
 ## COMP 15
 
 ### Topics Covered:
-* Your first guide to getting a software engineering job (interview questions!).
-* Knowing the difference between the client side code (using functions without knowing its implementation details) and the implementation side code (the code that runs your functions as promised in your documentation).
+* Your first guide to getting a software engineering job (interview questions!)
+* Knowing the difference between the client side code (using functions without knowing its implementation details) and the implementation side code (the code that runs your functions as promised in your documentation)
 * Introduction to C++ programs that utilize complex data structures
 * Utilizing Object Oriented Programming (OOP) concepts to write codes that are short and easy to understand
 * Using abstraction/modularity to break down complex problems
 * Allocating and managing dynamic memory and visualizing what happens under the hood (aliasing, deep vs shallow copies)
-* Evaluating different data structures (sequences vs linked list, stacks vs queues) according to their time and space complexity.
+* Evaluating different data structures (sequences vs linked list, stacks vs queues) according to their time and space complexity
 * Manipulating previous data structures (sequences, linked lists) to make more complex data structures (trees, heaps and more!)
 * Writing code that must handle MANY test cases and handling exceptions
 * Understanding Big O (asymptotic analysis) and why certain choices are better (first step towards becoming an ‘engineer’)
 * Reading long documentations (~8 pages PDF) for homework assignments
 * Writing technical comments and documents (README) that make your code easier to follow
-* RECURSION, recursion, ………, [recursion](https://www.google.com/search?q=aesthetics+of+being+short&rlz=1C5CHFA_enUS710US710&oq=aesthetics+of+being+short&aqs=chrome..69i57.3764j0j4&sourceid=chrome&ie=UTF-8#safe=off&q=recursion) has many merits beyond its aesthetics, which is one of the reasons why many programmers consider them important. It's a unique way of thinking that you should really familiarize yourself with.
-* Debugging at a new level and mastering how segmentation fault works 
+* RECURSION, recursion, ………, [recursion](https://www.google.com/search?q=aesthetics+of+being+short&rlz=1C5CHFA_enUS710US710&oq=aesthetics+of+being+short&aqs=chrome..69i57.3764j0j4&sourceid=chrome&ie=UTF-8#safe=off&q=recursion) has many merits beyond its aesthetics, which is one of the reasons why many programmers consider them important. It's a unique way of thinking that you should really familiarize yourself with
+* Debugging at a new level and mastering how segmentation fault works
 * Visualizing different sorting algorithms
-* Learning to optimize your code and seeing how your choices of code matter!
+* Learning to optimize your code and seeing how your choices of code matter
 
 ### Tips:
 * Start the homework early and read the homework document early. COMP 15 is a new challenge for COMP 11 students and the leap might feel like a lot (this is coming from a COMP 11 TA). At times, the document may seem confusing and there may seem like there’s too many things to consider at once. I know that there were students who started homework a few days before and got them done in COMP 11. In COMP 15, that is NO LONGER an option. You will get STUCK in automatic testing, even if your code works with simple input testing. Moreover, if you are confused, so are other students in your class and 2~3 TAs can’t get to over 20 students at once. Really try to start early so that you can discuss your idea with the TA. You will realize that you think a lot clearer when there is no pressure, so really do try to start early.
